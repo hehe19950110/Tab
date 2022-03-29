@@ -2,8 +2,10 @@ Tabs标签页
 
 1、设置下划线的滑动时：记得设置绝对定位，以及他所处位置的相对定位。
 如：
+```
 .tabs .line{position: absolute;}
 .tabs .tab-header{position: relative;}
+```
 
 2、this代表对象，代表即将要创建的实例；
 但是内部如果有绑定事件，onclick里面的this变成了绑定事件里面的DOM元素，
