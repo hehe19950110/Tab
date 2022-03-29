@@ -8,4 +8,4 @@ Tabs标签页
 一次激活多个Tabs的内容设置，取代单独设置多个Tabs，如：
 new Tabs(document.querySelectorAll('.tabs')[0])
 new Tabs(document.querySelectorAll('.tabs')[1])
-new Tabs(document.querySelectorAll('.tabs')[2])
+new Tabs(document.querySelectorAll('.tabs')[2])等
