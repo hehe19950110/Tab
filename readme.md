@@ -12,6 +12,7 @@ Tabs标签页
 如果仍需要使用this来获取实例，则需要先将this保存设置为其他的名字；
 又或者将绑定事件内部 用箭头函数来代替。
 如：
+```
  bind(){
     let self = this
     this.$$tabItems.forEach($tab => {
@@ -26,11 +27,16 @@ Tabs标签页
         self.$$tabPanels.forEach($panel => $panel.classList.remove('active'))
         self.$$tabPanels[index].classList.add('active')
       }
+```
 
 3、需要一次性激活多个Tabs的内容设置，
+```
 document.querySelectorAll('.tabs').forEach($container => new Tabs($container)）
+```
 可取代单独分别设置多个Tabs，
 如：
+```
 new Tabs(document.querySelectorAll('.tabs')[0])
 new Tabs(document.querySelectorAll('.tabs')[1])
 new Tabs(document.querySelectorAll('.tabs')[2])等
+```
